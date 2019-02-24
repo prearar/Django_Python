@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('',views.home, name='genom-home'),
-    path('about/',views.about, name='genom-about')
+    path('judge/',views.judge, name='genom-judge')
 ]

@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'genom/main.css' %}">
 	{% if title %}
-		<title>Django Blog {{title}}</title>
+		<title>Django Genome Predictions {{title}}</title>
 	{% else %}
-		<title>Django Blog</title>
+		<title>Django Genome Predictions </title>
 	{% endif %}
 	
 </head>
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link" href="{% url 'genom-home' %}">Home</a>
-          <a class="nav-item nav-link" href="{% url 'genom-about' %}">Judge</a>
+          <a class="nav-item nav-link" href="{% url 'genom-judge' %}">Judge</a>
           <a class="nav-item nav-link" href="#">Design</a>
           <a class="nav-item nav-link" href="#">Diseases</a>
           <a class="nav-item nav-link" href="#">Media</a>
@@ -36,11 +36,7 @@
           <a class="nav-item nav-link" href="#">FAQ</a>
           <a class="nav-item nav-link" href="#">Contact</a>
         </div>
-        <!-- Navbar Right Side -->
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Login</a>
-          <a class="nav-item nav-link" href="#">Register</a>
-        </div>
+        
       </div>
     </div>
   </nav>
@@ -51,19 +47,7 @@
     <div class="col-md-8">
       {% block content %}{% endblock %}
     </div>
-    <div class="col-md-4">
-      <div class="content-section">
-        <h3>Our Sidebar</h3>
-        <p class='text-muted'>You can put any information here you'd like.
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-light">Latest Posts</li>
-            <li class="list-group-item list-group-item-light">Announcements</li>
-            <li class="list-group-item list-group-item-light">Calendars</li>
-            <li class="list-group-item list-group-item-light">etc</li>
-          </ul>
-        </p>
-      </div>
-    </div>
+    
   </div>
 </main>
 	

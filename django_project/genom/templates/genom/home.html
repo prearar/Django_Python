@@ -6,16 +6,7 @@
 		  <div class="media-body">
 		    <div class="article-metadata">
 		      <a class="mr-2" href="#">{{ post.author }}</a>
-		      <small class="text-muted">{{ post.date_posted }}</small>
-		    </div>
-		    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-		    <p class="article-content">{{ post.content }}</p>
-		  </div>
-		</article>
-		
-	{% endfor %}
-
-	<p>
+		      <p>
 			Embryo selection is quickly becoming comples. How should we choose?
 
 			We show you moral dilemmas in reproduction, where you must choose the lesse of two evils. If you must choose 
@@ -23,5 +14,11 @@
 
 			As an outside observer, you judge which outcome you think is more acceptable. You can then see how your 
 			responses compare to those of other people.
-	</p>
+			  </p>
+		    </div>
+		  </div>
+		</article>
+		
+	{% endfor %}
+	
 {% endblock content %}
